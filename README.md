@@ -6,7 +6,7 @@ Inline creation, and edit via turbo/hotwire.
 
 Small use of stimulus to reset the form on the client.
 
-Launch redis easily with: `docker run --rm -it -p 6379:6379 redis:latest`
+Launch redis easily with: `bin/dev-docker-redis`
 
 # Odd things, I think are correct
 
