@@ -6,15 +6,13 @@ Inline creation, and edit via turbo/hotwire.
 
 Small use of stimulus to reset the form on the client.
 
-TODO: experiment with validation feedback.
-
 Launch redis easily with: `docker run --rm -it -p 6379:6379 redis:latest`
 
 # Odd things, I think are correct
 
 We use two different broadcast channels for post changes:
 1. `broadcasts` to update on the post show page
-2. "posts" to update the index page ()
+2. "posts" to update the index page
 
 # Key commands used to generate this project
 ```bash
@@ -26,3 +24,9 @@ rails turbo:install
 And then adding `import "../controllers"` to `packs/application.js` to get stimulus running.
 
 Also, the `<%= turbo_stream_from ... %>` and the `<%= turbo_frame_tag ... do %>` littered across the views.
+
+# TODOs
+- [ ] experiment with validation feedback
+- [ ] deploy on heroku
+- [ ] document the trace of a message starting in the broadcast concern all the way back through to the web client over websockets
+- [ ] create a version that drops webpacker and uses [importmap-rails](https://github.com/rails/importmap-rails)
