@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<%= turbo_stream_from :posts %>
+
+<%= turbo_frame_tag "posts" do %>
+  <h1>Posts</h1>
+
+  <%= turbo_frame_tag "new_post", src: new_post_path(@post), target: "_top" %>
+  <div id="posts"> <!-- Z2lkOi8vcmFpbHMtcDIvUG9zdC8zMA -->
+    <%= render @posts %>
+  </div>
+<% end %>
