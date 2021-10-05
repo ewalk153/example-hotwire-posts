@@ -1,6 +1,6 @@
 # README
 
-Simple playground of turbo-rails, hotwire-rails.
+Simple playground of [turbo-rails](https://github.com/hotwired/turbo-rails), [hotwire-rails](https://github.com/hotwired/hotwire-rails) to learn about [Hotwire](https://hotwired.dev/).
 
 Inline creation, and edit via turbo/hotwire.
 
